@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio | Web Engineer & Designer</title>
-  </head>
-  <body>
-    <!-- ヘッダー（ナビゲーション） -->
-    <header class="header">
-      <div class="container header-container">
-        <h1 class="logo">MyPortfolio</h1>
-        <button class="menu-toggle" id="menu-toggle" aria-label="メニューを開く">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </button>
-        <nav class="nav-menu" id="nav-menu">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#works">Works</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio | Web Engineer & Designer</title>
+</head>
+
+<body>
+  <!-- ヘッダー（ナビゲーション） -->
+  <header class="header">
+    <div class="container header-container">
+      <h1 class="logo">MyPortfolio</h1>
+      <button class="menu-toggle" id="menu-toggle" aria-label="メニューを開く">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero (トップ) セクション -->
+    <section id="hero" class="hero">
+      <div class="container hero-container">
+        <h2 class="hero-title">おんせん<span class="highlight">Web Engineer</span> & Designer</h2>
+        <p class="hero-subtitle">書いたやつ</p>
+        <a href="#works" class="btn btn-primary">作品を見る</a>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <!-- Hero (トップ) セクション -->
-      <section id="hero" class="hero">
-        <div class="container hero-container">
-          <h2 class="hero-title">Hello, I'm a <span class="highlight">Web Engineer</span> & Designer</h2>
-          <p class="hero-subtitle">機能性と美しさを両立させた体験を創ります。</p>
-          <a href="#works" class="btn btn-primary">作品を見る</a>
-        </div>
-      </section>
-
-      <!-- About セクション -->
-      <section id="about" class="about section">
-        <div class="container">
-          <h2 class="section-title">About Me</h2>
-          <div class="about-content">
-            <p>
-              Webエンジニア志望。フロントエンドの実装だけでなく、UI/UXデザインにも強い関心があります。
-              直感的に操作できる洗練されたデザインと、それを実現する綺麗なコードの両立を目指しています。
-            </p>
-            <div class="skills">
-              <h3>Skills</h3>
-              <ul id="skills-list" class="skills-list"></ul>
-            </div>
+    <!-- About セクション -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <p>
+            テスト
+          </p>
+          <div class="skills">
+            <h3>Skills</h3>
+            <ul id="skills-list" class="skills-list"></ul>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Works セクション -->
-      <section id="works" class="works section">
-        <div class="container">
-          <h2 class="section-title">Works</h2>
-          <p class="section-description">これまでに制作したプロジェクトやデザインの実績です。</p>
-          <div class="works-grid" id="works-grid">
-            <!-- Works dynamically rendered here via main.ts -->
-          </div>
+    <!-- Works セクション -->
+    <section id="works" class="works section">
+      <div class="container">
+        <h2 class="section-title">Works</h2>
+        <p class="section-description">作品集</p>
+        <div class="works-grid" id="works-grid">
+          <!-- Works dynamically rendered here via main.ts -->
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Contact セクション -->
-      <section id="contact" class="contact section">
-        <div class="container text-center">
-          <h2 class="section-title">Contact</h2>
-          <p>お仕事のご相談やお問い合わせは、各種リンクからお気軽にどうぞ。</p>
-          <div class="contact-links">
-            <a href="https://github.com/gitOnsen" class="btn btn-secondary" target="_blank" rel="noopener">GitHub Profile</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!-- フッター -->
-    <footer class="footer">
+    <!-- Contact セクション -->
+    <section id="contact" class="contact section">
       <div class="container text-center">
-        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        <h2 class="section-title">Contact</h2>
+        <p>お問い合わせ。</p>
+        <div class="contact-links">
+          <a href="https://github.com/gitOnsen" class="btn btn-secondary" target="_blank" rel="noopener">GitHub
+            Profile</a>
+        </div>
       </div>
-    </footer>
+    </section>
+  </main>
 
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container text-center">
+      <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>
